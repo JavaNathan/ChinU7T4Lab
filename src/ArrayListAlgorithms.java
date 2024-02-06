@@ -13,15 +13,6 @@ public class ArrayListAlgorithms {
         return false;
     }
 
-    /** Returns number of elements in intList that are less than the
-     *  average of all elements.
-     *
-     *  Does NOT mutate (modify) elements of intList.
-     *  PRECONDITION: intList.size() > 0
-     *
-     *  @param intList  original arraylist of Integers
-     *  @return  the number of ints in intList that are less than the average
-     */
     public static int belowAverage(ArrayList<Integer> intList) {
         ArrayList<Integer> newList = new ArrayList<Integer>();
         int len = intList.size();
@@ -37,5 +28,19 @@ public class ArrayListAlgorithms {
         }
         int newLen = newList.size();
         return newLen;
+    }
+
+    /** Replaces all words in wordList that end in "s" with the all-uppercase
+     *  version of the word.  For example, "apples" should be replaced with "APPLES".
+     *  Assume all letters of all words in wordList are lowercase initially (no need
+     *  to worry about checking for case or converting first to lowercase)
+     *
+     *  DOES mutate (modify) elements of wordList.
+     *  PRECONDITION: wordList.size() > 0
+     *
+     *  @param wordList  original arraylist of words
+     */
+    public static void replaceWithCaps(ArrayList<String> wordList) {
+
     }
 }
