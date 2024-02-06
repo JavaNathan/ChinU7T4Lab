@@ -1,17 +1,26 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.ArrayList;
+import java.util.Arrays;
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+public class Main{
+    public static void main(String[] args){
+        ArrayList<String> names = new ArrayList<String>();
+        names.add("Jessica");
+        names.add("Abby");
+        names.add("Emily");
+        names.add("Destiny");
+        names.add("Mateo");
+        names.add("Sofia");
+        names.add("Tim");
+        names.add("James");
+        names.add("Jim");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        System.out.println("BEFORE: " + names);
+
+        // write a loop below to traverse names and insert "hi!" after any
+        // name that contains the letter "i"
+
+
+        System.out.println("AFTER: " + Hi.hello(names));
+
     }
 }
