@@ -3,27 +3,15 @@ import java.util.Arrays;
 
 public class Main{
     public static void main(String[] args){
-        ArrayList<String> names = new ArrayList<String>();
-        names.add("Jesse");
-        names.add("Bart");
-        names.add("David");
-        names.add("Abigail");
-        names.add("Frank");
-        names.add("Steph");
-        names.add("Thomas");
-        names.add("Jimmy");
-        names.add("Joe");
-        names.add("Klein");
-        names.add("Daisy");
-
-        System.out.println("BEFORE: " + names);
-
-        // write a loop below to traverse names and REMOVE each name that
-        // is exactly 5 letters
-
-
-        System.out.println("AFTER: " + Hi.remove(names));
-
+        ArrayList<Integer> intList = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5));
+        int count = ArrayListAlgorithms.belowAverage(intList);
+        System.out.println(count);
+        ArrayList<Integer> intList2 = new ArrayList<Integer>(Arrays.asList(6, 3, 8, 5, 6, 3));
+        count = ArrayListAlgorithms.belowAverage(intList2);
+        System.out.println(count);
+        ArrayList<Integer> intList3 = new ArrayList<Integer>(Arrays.asList(10, 12, 9));
+        count = ArrayListAlgorithms.belowAverage(intList3);
+        System.out.println(count);
 
 
     }
